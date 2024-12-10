@@ -12,7 +12,7 @@ class GPTV_Actor:
         self.agent_memory = []
     def _call_api(self, messages):
         response = self.client.chat.completions.create(
-            model="gpt-4-vision-preview",
+            model="gpt-4-turbo",
             messages=messages,
             max_tokens=400,
         )
